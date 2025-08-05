@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Pay.scss";
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
+// import { Elements } from "@stripe/react-stripe-js";
 import newRequest from "../../utils/newRequest";
 import { useParams } from "react-router-dom";
-import CheckoutForm from "../../components/checkoutForm/CheckoutForm";
+// import CheckoutForm from "../../components/checkoutForm/CheckoutForm";
 
-const stripePromise = loadStripe(
-  "paste your public key"
-);
+// const stripePromise = loadStripe(
+//   "paste your public key"
+// );
 
 const Pay = () => {
   const [clientSecret, setClientSecret] = useState("");
